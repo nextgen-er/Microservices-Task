@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
 
 app.get('/api/users', async (req, res) => {
   try {
-    const response = await axios.get('http://user-service:3000/users');
+    const response = await axios.get('http://user-service:3004/users');
     res.json(response.data);
   } catch (error) {
     res.status(500).json({ error: 'Error fetching users' });
