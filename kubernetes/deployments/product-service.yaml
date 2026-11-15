@@ -9,10 +9,10 @@ spec:
   selector:
     matchLabels:
       app: product-service
-    template:
-      metadata:
-        labels:
-          app: product-service
+  template:
+    metadata:
+      labels:
+        app: product-service
     spec:
       containers:
         - name: product-service
@@ -42,4 +42,3 @@ spec:
               port: 3001
             initialDelaySeconds: 3
             periodSeconds: 5
----
