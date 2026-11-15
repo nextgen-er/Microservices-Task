@@ -38,13 +38,13 @@ spec:
               value: "http://order-service:3002"
           livenessProbe:
             httpGet:
-              path: /
+              path: /health
               port: 3003
             initialDelaySeconds: 5
             periodSeconds: 10
           readinessProbe:
             httpGet:
-              path: /
+              path: /health
               port: 3003
             initialDelaySeconds: 3
             periodSeconds: 5
